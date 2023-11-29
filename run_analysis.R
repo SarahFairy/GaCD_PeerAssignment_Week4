@@ -87,7 +87,7 @@ final_col <- sub("[0-9]+_", "", final_col)
 names(res_summary) <- final_col
 
 # write summary dataframe to txt file
-write.table(res_summary, file.path(wd, "summary_subj_activity.txt"), col.names = TRUE)
+write.table(res_summary, file.path(wd, "summary_subj_activity.txt"), col.names = TRUE, row.names = FALSE)
 
 # import of written txt file
 # df_result <- read.table(file.path(wd, "summary_subj_activity.txt"), header = TRUE, check.names = FALSE)
